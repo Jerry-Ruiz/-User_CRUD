@@ -1,0 +1,49 @@
+.userCard {
+  border: solid 2px rgb(229, 221, 221);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.userCard__name {
+  display: flex;
+  justify-content: center;
+}
+
+.userCard__list {
+  display: grid;
+  padding: 5px;
+}
+
+.userCard__li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.userCard__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.userCard__trash {
+  background-color: rgb(164, 83, 83);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 6px;
+  cursor: pointer;
+  transition: ease 0.1s;
+}
+.userCard__trash:hover {
+  background-color: #f30606;
+}
+
+.userCard__pencil {
+  border: solid 2px rgb(229, 221, 221);
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
