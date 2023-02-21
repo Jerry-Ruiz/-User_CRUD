@@ -1,9 +1,11 @@
 import React from 'react'
 import "./styles/UserCard.css"
 
-const UserCard = ({ user, deleteUser, setUpdatingUser, handleClickShowModal }) => {
+const UserCard = ({ user, deleteUser, setUpdatingUser, handleClickShowModal, }) => {
 
-  const hanleClickEdit = () => {
+  //modificacion de handle
+
+  const handleClickEdit = () => {
     setUpdatingUser(user)
     handleClickShowModal()
   }
@@ -20,7 +22,7 @@ const UserCard = ({ user, deleteUser, setUpdatingUser, handleClickShowModal }) =
       <hr />
       <footer className='userCard__footer'>
         <button className='userCard__trash' onClick={() => deleteUser(user.id)}><i className='bx bx-trash'></i></button>
-        <button className='userCard__pencil' onClick={hanleClickEdit}><i className='bx bx-pencil'></i></button>
+        <button className='userCard__pencil' onClick={handleClickEdit}><i className='bx bx-pencil'></i></button>
       </footer>
     </article>
   )

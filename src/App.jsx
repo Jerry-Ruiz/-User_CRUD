@@ -38,7 +38,7 @@ function App() {
   };
 
   const updateUser = (data, id) => {
-    axios.patch(`${BASE_URL}users/${id}`, data)
+    axios.patch(`${BASE_URL}users/${id}/`, data)
       .then(() => {
         getAllUser()
         handleClickShowModal()
